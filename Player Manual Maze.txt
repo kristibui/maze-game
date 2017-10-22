@@ -1,0 +1,52 @@
+// Assignment 10
+// McLean Colin
+// mcleancolin
+// Bui Kristi
+// kristibui
+
+=====================
+***** Maze Game *****
+=====================
+
+Controls:
+b : to initiate a breadth first search on the maze
+c : to change the mode to make a maze with no bias towards a direction
+d : to initiate a depth first search on the maze
+h : to change the mode to make a maze with a horizontal bias
+v : to change the mode to make a maze with a vertical bias
+k : to toggle the knocking down of the walls
+n : to reset the game
+p : to toggle the viewing of the path
+t : to display the minimum spanning tree
+
+up : moves the player up one space
+left : moves the player left one space
+right : moves the player right one space
+down : moves the player down one space
+
+How to Play:
+1. Control the player using the up, left, right and down keys on the keyboard.
+2. The player will start in the top left-hand corner of the screen.
+3. To win, control the character and navigate them through the maze to the bottom right-hand corner of the screen. A message will display once the player has won the game.
+4. To reset the game, press “n”.
+5. To display the minimal spanning tree of the maze, press “t”.
+6. To reset the game and play a maze with a vertical bias, press “h”. The regular reset key “n” creates mazes with horizontal bias.
+7. To select the bias in which the maze is built, press “c” for classic mode, or no bias, “h” for a horizontal bias, or “v” for a vertical bias.
+7. To change the size and dimensions of the maze, change the MAZE_HEIGHT and MAZE_WIDTH of the game.
+8. To view a larger maze size, please lower the "SCALE" variable of the game in order to fit everything.
+
+Whistles:
+1- Provide an option to toggle the viewing of the minimal spanning tree (press “t”)
+2- Provide an option to toggle the viewing of the visited paths (press “p”)
+3- Allow the user the ability to start a new maze without restarting the program (press “n”)
+4- Displays the amount of wrong moves the player does.
+
+Bell:
+1- In addition to animating the solution of the maze, also animate the construction of the maze: on each tick, show a single wall being knocked down. (press “k” to toggle)
+2- Construct mazes with a bias in a particular direction - a preference for horizontal or vertical corridors. (press “h” “v” or “c”)
+
+Notes:
+- The maximum size of the maze that the game can be played at is 100 x 60.
+- Depending on how large the dimensions of the maze are, the game might run slightly slower, which is variable depending on what computer the game is being run on.
+- Depending on how large the dimensions of the maze are, the tests might encounter a memory error, since many of the method tests utilize for and for each loops on each element of an ArrayList.
+- The wrong moves count is done by counting how many times the player back tracked, not how many vertices are not in the solution path
